@@ -6,11 +6,11 @@ import { AboutPagesComponent } from './shared/pages/about-pages/about-pages.comp
 import { ContactPagesComponent } from './shared/pages/contact-pages/contact-pages.component';
 
 const routes: Routes = [
-  { path: '', component: HomePagesComponent },
+  // { path: '', component: HomePagesComponent },
   { path: 'about', component: AboutPagesComponent },
   { path: 'contact', component: ContactPagesComponent },
   { path: 'countries', loadChildren: () => import('./countries/countries.module').then(m => m.CountriesModule) },
-  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: 'countries' },
 ];
 
 @NgModule({
