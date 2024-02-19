@@ -4,9 +4,9 @@ import { HomePagesComponent } from './shared/pages/home-pages/home-pages.compone
 import { AboutPagesComponent } from './shared/pages/about-pages/about-pages.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomePagesComponent },
+  { path: '', component: HomePagesComponent },
   { path: 'about', component: AboutPagesComponent },
-  { path: '**', redirectTo: 'home' },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
