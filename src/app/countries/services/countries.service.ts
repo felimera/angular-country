@@ -15,7 +15,7 @@ export class CountriesService {
       .get<Country[]>(url)
       .pipe(
         catchError(() => of([])),
-        delay(1000),
+        // delay(1000),
       );
   }
 
