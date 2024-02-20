@@ -21,8 +21,7 @@ export class ByCapitalPageComponent {
           if (resp) {
             this.countries = resp;
           }
-        },
-        error: (resp) => console.log(resp.error)
+        }
       });
   }
 }
